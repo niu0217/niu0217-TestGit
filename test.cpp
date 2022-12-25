@@ -1,5 +1,6 @@
 #include<iostream>
 #include<vector>
+#include<string>
 using namespace std;
 
 class Solution {
@@ -11,7 +12,8 @@ public:
                 nums[slowIndex++] = nums[fastIndex];
             }
         }
-        return slowIndex;
+        cout<<"nihao"<<endl;
+        return slowIndex + 1;
     }
 };
 

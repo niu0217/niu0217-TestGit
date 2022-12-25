@@ -1,0 +1,9 @@
+#!/bin/sh
+git config --global diff.tool bc4
+git config --global difftool.prompt false
+git config --global difftool.bc4.cmd '"/Applications/Beyond Compare.app/Contents/MacOS/bcomp" "$LOCAL" "$REMOTE"'
+
+git config --global merge.tool bc4
+git config --global mergetool.prompt false
+git config --global mergetool.bc4.cmd '"/Applications/Beyond Compare.app/Contents/MacOS/bcomp" "$LOCAL" "$REMOTE" "$BASE" "$MERGED"'
+git config --global mergetool.bc4.trustexitcode true
