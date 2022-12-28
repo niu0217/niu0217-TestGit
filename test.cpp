@@ -19,11 +19,9 @@ public:
 
 int main()
 {
-    Solution slu;
     vector<int> a = {
         1,4,4,8
     };
-    cout<<slu.removeElement(a,4)<<endl;
 }
 
 
